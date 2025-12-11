@@ -1,0 +1,236 @@
+</html>
+<!DOCTYPE html>
+<head><title>MySkill</title></head>
+<body>
+<body bgcolor="#fffafa">
+</body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style> 
+body { 
+  margin: 0; 
+  background-color:#fffafa; 
+  font-family: Arial, Helvetica, sans-serif; 
+} 
+ 
+#navbar { 
+  background-color:#D6C7B5 ; 
+  position: fixed; 
+  top: -50px; 
+  width: 100%; 
+  display: block; 
+  transition: top 0.3s; 
+} 
+ 
+#navbar a { 
+  float: left; 
+  display: block; 
+  color:#3B3B3B; 
+  text-align: center; 
+  padding: 15px; 
+  text-decoration: none; 
+  font-size: 17px; 
+} 
+ 
+#navbar a:hover { 
+  background-color: #B8A18A; 
+  color:#ffffff; 
+} 
+</style> 
+</head> 
+<body> 
+ 
+<div id="navbar"> 
+  <a href="index.html">Home</a> 
+  <a href="AboutMe.html">About me</a> 
+  <a href="MyEducation.html">My Education</a>
+  <a href="myskill.html">My Skills</a>
+  <a href="MyAchievement.html">My Achievement</a>
+  <a href="contact.html">Contact</a>
+ 
+  
+
+</div> 
+  
+<script> 
+// When the user scrolls down 20px from the top of the document, slide down the navbar 
+window.onscroll = function() {scrollFunction()}; 
+ 
+function scrollFunction() { 
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { 
+    document.getElementById("navbar").style.top = "0"; 
+  } else { 
+    document.getElementById("navbar").style.top = "-50px"; 
+  } 
+} 
+</script> 
+ 
+</body> 
+</html>
+
+
+<p>
+<p>
+<br>
+<h1 style="background-color:#B8A18A; font-family:tahoma; text-align:center; color:#836953;"> MY SKILLS </h1>
+<br>
+
+<style>
+   
+    :root {
+        --primary-accent: #3498db; 
+        --text-dark: #333;
+        --bg-light: #f7f7f7;
+        --bar-bg: #e9ecef; 
+    }
+    .skills-page-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        font-family: 'Arial', sans-serif;
+    }
+    h2 {
+        color: #987456;
+        border-bottom: 2px solid var(--primary-accent);
+        padding-bottom: 5px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+
+    .language-box {
+        max-width: 300px; 
+        padding: 15px 25px;
+        border: 2px solid var(--primary-accent);
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+    }
+    .language-box ul {
+        list-style: none;
+        padding: 0;
+        margin: 5px 0 0;
+    }
+    .language-box li {
+        margin-bottom: 5px;
+        font-size: 1em;
+        color: var(--text-dark);
+    }
+    .language-box li::before {
+        content: '🗣️'; 
+        margin-right: 8px;
+    }
+
+  
+    .skills-list {
+        list-style: none;
+        padding: 0;
+    }
+    .skill-item {
+        margin-bottom: 25px;
+    }
+    .skill-label {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: var(--text-dark);
+    }
+    .skill-bar {
+        background-color: var(--bar-bg);
+        border-radius: 5px;
+        height: 15px;
+        overflow: hidden;
+    }
+    .skill-level {
+        background-color: var(--primary-accent);
+        height: 100%;
+        border-radius: 5px;
+      
+    }
+</style>
+
+<div class="skills-page-container">
+    
+    <h2>Languages Spoken</h2>
+    <div class="language-box">
+        <ul>
+            <li>English</li>
+            <li>Bahasa Melayu</li>
+        </ul>
+    </div>
+
+<h3 style="font-family:Verdana;color:#836953;"> An audio of me speaking english: </h3>
+<p>
+<audio controls>
+    <source src="myenglish.ogg" type="audio/mpeg">
+</audio>
+<br>
+    <h2>Technical & Software Skills</h2>
+    <ul class="skills-list">
+
+        <li class="skill-item">
+            <div class="skill-label">
+                <span>Canva</span>
+                <span>85%</span> </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 85%;"></div> 
+            </div>
+        </li>
+
+        <li class="skill-item">
+            <div class="skill-label">
+                <span>Microsoft Office Suite (Word, Excel, PPT)</span>
+                <span>90%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 90%;"></div>
+            </div>
+        </li>
+
+        <li class="skill-item">
+            <div class="skill-label">
+                <span>HTML</span>
+                <span>70%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 70%;"></div>
+            </div>
+        </li>
+
+        <li class="skill-item">
+            <div class="skill-label">
+                <span>Google Workspace (Docs, Sheets)</span>
+                <span>95%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 95%;"></div>
+            </div>
+        </li>
+        
+        <li class="skill-item">
+            <div class="skill-label">
+                <span>Basic Use of Online Survey Tools (Google Forms)</span>
+                <span>80%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;"></div>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+
+
+<h5 style="background-color:#B8A18A; font-family:gill sans; color:#2C3539;"> . </h5>
+
+<br>
+<center><h2><a href="#top">⇧ TOP ⇧</h2></a>
+<div class="copyright">
+<span>© Copyright IrdinaAhmad 2025 | Best viewed in Chrome | Last updated December 2025</span> 
+</center></div>
+</html>
+
+

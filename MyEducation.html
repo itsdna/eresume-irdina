@@ -1,0 +1,374 @@
+</html>
+<!DOCTYPE html>
+<head><title>MyEducation</title></head>
+<body>
+<body bgcolor="#fffafa">
+</body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style> 
+body { 
+  margin: 0; 
+  background-color:#fffafa; 
+  font-family: Arial, Helvetica, sans-serif; 
+} 
+ 
+#navbar { 
+  background-color:#D6C7B5; 
+  position: fixed; 
+  top: -50px; 
+  width: 100%; 
+  display: block; 
+  transition: top 0.3s; 
+} 
+ 
+#navbar a { 
+  float: left; 
+  display: block; 
+  color: #3B3B3B; 
+  text-align: center; 
+  padding: 15px; 
+  text-decoration: none; 
+  font-size: 17px; 
+} 
+ 
+#navbar a:hover { 
+  background-color: #B8A18A; 
+  color:#ffffff; 
+} 
+</style> 
+</head> 
+<body> 
+ 
+<div id="navbar"> 
+  <a href="index.html">Home</a> 
+  <a href="MyAboutMe.html">About me</a> 
+  <a href="MyEducation.html">My Education</a>
+  <a href="myskill.html">My Skills</a>
+  <a href="MyAchievement.html">My Achievement</a>
+  <a href="mycontact.html">Contact</a> 
+  
+</div> 
+  
+<script> 
+// When the user scrolls down 20px from the top of the document, slide down the navbar 
+window.onscroll = function() {scrollFunction()}; 
+ 
+function scrollFunction() { 
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { 
+    document.getElementById("navbar").style.top = "0"; 
+  } else { 
+    document.getElementById("navbar").style.top = "-50px"; 
+  } 
+} 
+</script> 
+ 
+</body> 
+</html>
+
+
+<p>
+<br>
+<h1 style="background-color:#B8A18A; font-family:tahoma; text-align:center; color:#836953;"> MY EDUCATION </h1>
+
+
+<br>
+
+
+<h3 style="font-family:courier new; text-align:center; color: #8a795d;">"education is the movement from darkness to light"</h3>
+<p>
+<h5 style="background-color:#B8A18A; font-family:gill sans; color:#2C3539;"> . </h5>
+<p>
+<style>
+   
+    :root {
+        --primary-color: #BC8F8F; 
+        --text-dark: #987654;
+        --bg-light: #f4f7f9;
+        --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: var(--bg-light);
+        margin: 0;
+        padding: 0;
+    }
+    .education-page-container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #987654;
+        font-size: 2.5em;
+        margin-bottom: 40px;
+    }
+
+   
+    .education-grid {
+        display: grid;
+        
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        align-items: stretch; 
+    }
+
+   
+    .education-box {
+        background:#FFFAF0;
+        border-radius: 12px;
+        box-shadow: var(--box-shadow);
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s, box-shadow 0.3s;
+        min-height: 250px; 
+    }
+    .education-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+   
+    .content-details {
+        flex-grow: 1; 
+    }
+    .content-details h2 {
+        color: var(--text-dark);
+        font-size: 1.5em;
+        margin-top: 0;
+        margin-bottom: 5px;
+        border-bottom: 2px solid var(--bg-light);
+        padding-bottom: 5px;
+    }
+    .content-details p {
+        margin: 5px 0;
+        color: #987456 ;
+        font-size: 0.95em;
+    }
+    .content-details .duration {
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+        display: block;
+    }
+    
+   
+    .photo-placeholder {
+        width: 100%;
+        height: 120px; 
+        background-color: #FAF0E6;
+        border-radius: 8px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-light);
+        font-style: italic;
+        object-fit: cover; 
+    }
+
+   
+    #degree-box {
+        border: 3px solid var(--primary-color);
+    }
+</style>
+
+<div class="education-page-container">
+    <h1>My Educational Journey</h1>
+    
+    <div class="education-grid">
+        
+        <div class="education-box" id="degree-box">
+    <div class="content-details">
+        <h2>Degree</h2>
+        <span class="duration">2023 - 2026 (Expected)</span>
+        <p><strong>Institution:</strong> UiTM Kedah</p>
+        <p><strong>Focus:</strong> Bachelor of Information Science (Honours) Library Management</p>
+    </div>
+    
+    <a href="https://kedah.uitm.edu.my/" target="_blank">
+        <img class="photo-placeholder" src="uitmk.jpg" alt="Degree institution photo">
+    </a>
+</div>
+
+        <div class="education-box">
+            <div class="content-details">
+                <h2>Pre University (STPM)</h2>
+                <span class="duration">2021 - 2023</span>
+                <p><strong>Institution:</strong> SMK Dato Ahmad</p>
+                <p><strong>Focus:</strong> Science Social + Kesusasteraan Melayu</p>
+                <p>Achievement: Ahli Majlis Perwakilan Pelajar Tingkatan 6, Bendahari Persatuan Tingkatan 6</p>
+            </div>
+            <img class="photo-placeholder" src="stpm.jpg" alt="Pra-University institution photo">
+        </div>
+
+        <div class="education-box">
+            <div class="content-details">
+                <h2>Secondary School</h2>
+                <span class="duration">2016 - 2020</span>
+                <p><strong>Institution:</strong> SMk Dato Ahmad</p>
+                <p><strong>Focus:</strong> Science Stream </p>
+                
+            </div>
+            <img class="photo-placeholder" src="smkda.jpg" alt="Secondary school photo">
+        </div>
+
+        <div class="education-box">
+            <div class="content-details">
+                <h2>Primary School</h2>
+                <span class="duration">2010 - 2015</span>
+                <p><strong>Institution:</strong> Sk Sumpitan</p>
+                <p>A strong foundation in core subjects and early teamwork skills.</p>
+            </div>
+            <img class="photo-placeholder" src="sksumpitan.jpg" alt="Primary school photo">
+        </div>
+        
+        <div class="education-box">
+            <div class="content-details">
+                <h2>Kindergarten</h2>
+                <span class="duration">2008 - 2009</span>
+                <p><strong>Institution:</strong> Tadika Temelong</p>
+                <p>Early development focusing on social skills and creative play.</p>
+            </div>
+            <img class="photo-placeholder" src="tadika.jpg" alt="Kindergarten photo">
+        </div>
+        
+    </div>
+</div></div>
+
+<br>
+<style>
+    
+    :root {
+        --primary-color: #007bff; 
+        --header-bg: #f2f2f2;
+        --border-color: #ddd;
+        --text-color: #987654;
+    }
+    
+    .results-table-container {
+        max-width: 600px;
+        margin: 50px auto; 
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .results-table-container h2 {
+        text-align: center;
+        color: var(--text-color); 
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+
+   
+    table {
+        width: 100%;
+        border-collapse: collapse; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden; 
+    }
+
+
+    thead th {
+        background-color: #a0785a ;
+        color: white; 
+        text-align: left;
+        padding: 12px 15px;
+        font-weight: bold;
+    }
+
+   
+    tbody td {
+        padding: 12px 15px;
+
+        border-bottom: 1px solid var(--border-color);
+        color: #a99a86; 
+    }
+    
+   
+    tbody tr:nth-child(even) {
+        background-color: var(--header-bg); 
+    }
+
+
+    tbody tr:hover {
+        background-color: #a0785a; 
+    }
+
+  
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
+</style>
+
+<div class="results-table-container">
+    <h2>Academic Examination Results</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Examination</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>UPSR</td>
+                <td>5A</td>
+            </tr>
+            <tr>
+                <td>PT3</td>
+                <td>5A</td>
+            </tr>
+            <tr>
+                <td>SPM</td>
+                <td>4A</td>
+            </tr>
+            <tr>
+                <td>STPM</td>
+                <td>3.17</td>
+            </tr>
+            <tr>
+                <td>MUET</td>
+                <td>Band 4</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>
+<h5 style="background-color:#B8A18A; font-family:gill sans; color:#2C3539;"> . </h5>
+<p>
+
+
+</body>
+</html>
+
+
+
+<br>
+<center><h2><a href="#top">⇧ TOP ⇧</h2></a>
+<div class="copyright">
+<span>© Copyright IrdinaAhmad 2025 | Best viewed in Chrome | Last updated December 2025</span> 
+</center></div>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

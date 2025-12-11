@@ -1,0 +1,414 @@
+</html>
+<!DOCTYPE html>
+<head><title>MyAchievement</title></head>
+<body>
+<body bgcolor="#fffafa">
+</body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style> 
+body { 
+  margin: 0; 
+  background-color:#fffafa; 
+  font-family: Arial, Helvetica, sans-serif; 
+} 
+ 
+#navbar { 
+  background-color:#D6C7B5 ; 
+  position: fixed; 
+  top: -50px; 
+  width: 100%; 
+  display: block; 
+  transition: top 0.3s; 
+} 
+ 
+#navbar a { 
+  float: left; 
+  display: block; 
+  color:#3B3B3B; 
+  text-align: center; 
+  padding: 15px; 
+  text-decoration: none; 
+  font-size: 17px; 
+} 
+ 
+#navbar a:hover { 
+  background-color: #B8A18A; 
+  color:#ffffff; 
+} 
+</style> 
+</head> 
+<body> 
+ 
+<div id="navbar"> 
+  <a href="index.html">Home</a> 
+  <a href="MyAboutMe.html">About me</a> 
+  <a href="MyEducation.html">My Education</a>
+  <a href="myskill.html">My Skills</a>
+  <a href="MyAchievement.html">My Achievement</a>
+  <a href="mycontact.html">Contact</a> 
+  
+
+</div> 
+  
+<script> 
+// When the user scrolls down 20px from the top of the document, slide down the navbar 
+window.onscroll = function() {scrollFunction()}; 
+ 
+function scrollFunction() { 
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { 
+    document.getElementById("navbar").style.top = "0"; 
+  } else { 
+    document.getElementById("navbar").style.top = "-50px"; 
+  } 
+} 
+</script> 
+ 
+</body> 
+</html>
+
+
+<br>
+<h1 style="background-color:#B8A18A; font-family:tahoma; text-align:center; color:#836953;"> MY ACHIEVEMENT </h1>
+<br>
+
+
+    <style>
+    :root{
+      --soft-sand: #D6C7B5;
+      --warm-taupe: #B8A18A;
+      --section-bg: #FAF9F7;
+      --page-bg: #FFFFFF;
+      --card-border: #E9E2D9;
+      --text-primary: #3B3B3B;
+      --text-secondary: #7D756D;
+      --muted: #A79D94;
+      --accent-dark: #55483F;
+      --radius: 12px;
+      --glass: rgba(255,255,255,0.6);
+      --gap: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    html,body { height:100%; margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:var(--text-primary); background:var(--page-bg); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+   
+    .container{
+      max-width:1100px;
+      margin:36px auto;
+      padding:28px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:20px;
+    }
+    .title-block{
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+    .logo{
+      width:62px;
+      height:62px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--soft-sand),var(--warm-taupe));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      box-shadow:0 6px 18px rgba(87,72,64,0.08);
+      flex:0 0 62px;
+    }
+    h1{ font-size:20px; margin:0; color:var(--accent-dark); }
+    p.lead{ margin:0; color:var(--text-secondary); font-size:14px; }
+
+  
+    .filters{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      margin:18px 0 24px;
+      flex-wrap:wrap;
+    }
+    .pill{
+      background:transparent;
+      border:1px solid var(--card-border);
+      color:var(--text-primary);
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:13px;
+      cursor:pointer;
+      transition:all .18s ease;
+    }
+    .pill[data-active="true"]{
+      background:var(--warm-taupe);
+      color:#fff;
+      border-color:var(--warm-taupe);
+      box-shadow:0 6px 18px rgba(184,161,138,0.12);
+    }
+    .pill:focus{ outline:3px solid rgba(214,199,181,0.28); }
+
+   
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+      gap:var(--gap);
+    }
+
+    
+    .card{
+      background:var(--section-bg);
+      border-radius:var(--radius);
+      padding:18px;
+      border:1px solid var(--card-border);
+      box-shadow: 0 6px 18px rgba(87,72,64,0.04);
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
+    .card:hover{ transform:translateY(-6px); box-shadow:0 12px 30px rgba(87,72,64,0.08); }
+    .icon{
+      width:52px;
+      height:52px;
+      border-radius:10px;
+      background:linear-gradient(180deg,var(--soft-sand),var(--section-bg));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:20px;
+      color:var(--accent-dark);
+      flex:0 0 52px;
+      border:1px solid var(--card-border);
+    }
+    .card-body{ flex:1; }
+    .card-type{ display:flex; gap:8px; align-items:center; margin-bottom:8px; }
+    .type-label{
+      background:transparent; color:var(--warm-taupe); font-weight:600; font-size:12px; letter-spacing:0.3px;
+    }
+    .title{ font-size:15px; margin:0 0 6px; color:var(--text-primary); }
+    .meta{ font-size:13px; color:var(--text-secondary); margin:0 0 8px; }
+    .desc{ font-size:13px; color:var(--muted); margin:0; line-height:1.45; }
+
+    
+    .chips{ display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+    .chip{
+      background:transparent;
+      border:1px solid var(--card-border);
+      padding:6px 8px;
+      font-size:12px;
+      border-radius:8px;
+      color:var(--text-secondary);
+    }
+
+  
+    .empty{
+      padding:36px;
+      text-align:center;
+      color:var(--text-secondary);
+      border-radius:10px;
+      border:1px dashed var(--card-border);
+      background:linear-gradient(180deg, rgba(214,199,181,0.03), transparent);
+    }
+
+  
+    @media (max-width:620px){
+      .logo{ width:52px; height:52px; }
+      h1{ font-size:18px; }
+      .container{ padding:16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" id="page">
+    <header>
+      <div class="title-block">
+        <div class="logo" aria-hidden="true">꣑ৎ</div>
+        <div>
+          <h1>My Achievements</h1>
+          <p class="lead">Academic achievement, certificates, and co-curricular participation </p>
+        </div>
+      </div>
+
+      <div>
+        <button class="pill" id="downloadBtn" onclick="downloadList()">Download PDF</button>
+      </div>
+    </header>
+   
+    <nav class="filters" aria-label="Filter achievements">
+      <button class="pill" data-filter="all" data-active="true" onclick="filterItems(this)">All</button>
+      <button class="pill" data-filter="academic" data-active="false" onclick="filterItems(this)">Academic</button>
+      <button class="pill" data-filter="cocurricular" data-active="false" onclick="filterItems(this)">Co-curricular</button>
+    </nav>
+
+
+    <section class="grid" id="achGrid" aria-live="polite">
+
+    
+      <article class="card" data-type="academic">
+        <div class="icon" aria-hidden="true">📚</div>
+        <div class="card-body">
+          <div class="card-type">
+            <span class="type-label">Academic</span>
+            <span style="font-size:12px;color:var(--muted)">• STPM</span>
+          </div>
+          <h3 class="title">Successfully Publish A Book</h3>
+          <p class="meta">Degree — 2025</p>
+          <p class="desc">Compiler for Extended Abstract Group Project Semester 4.</p>
+          <div class="chips">
+            <span class="chip">2025</span>
+            <span class="chip">Group Project</span>
+          </div>
+        </div>
+      </article>
+
+   
+      <article class="card" data-type="cocurricular">
+        <div class="icon" aria-hidden="true">🥈</div>
+        <div class="card-body">
+          <div class="card-type">
+            <span class="type-label">Co-curricular</span>
+            <span style="font-size:12px;color:var(--muted)">• School Club</span>
+          </div>
+          <h3 class="title">Form 6 Poetry Writing</h3>
+          <p class="meta">SMK Dato Ahmad — 2022</p>
+          <p class="desc">Second Place in English Creative Writing Competition (Online), Hulu Perak District</p>
+          <div class="chips">
+            <span class="chip">Poetry</span>
+            <span class="chip">English</span>
+          </div>
+        </div>
+      </article>
+
+      
+      <article class="card" data-type="academic">
+        <div class="icon" aria-hidden="true">📜</div>
+        <div class="card-body">
+          <div class="card-type">
+            <span class="type-label">Academic</span>
+            <span style="font-size:12px;color:var(--muted)">• STPM</span>
+          </div>
+          <h3 class="title">BEST SUBJECT AWARD (HISTORY),STPM</h3>
+          <p class="meta">SMK Dato Ahmad — 2023</p>
+          <p class="desc">Got highest CGPA for all three semesters.</p>
+          <div class="chips">
+            <span class="chip">2023</span>
+            <span class="chip">STPM</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-type="cocurricular">
+        <div class="icon" aria-hidden="true">📖</div>
+        <div class="card-body">
+          <div class="card-type">
+            <span class="type-label">Co-curricular</span>
+            <span style="font-size:12px;color:var(--muted)">• Competition</span>
+          </div>
+          <h3 class="title">Participation-Kenduri Buku (National Reading Decade 2022), Perak</h3>
+          <p class="meta">Organized by Dewan Bahasa dan Pustaka Wilayah Utara.</p>
+          <p class="desc">Participated in Kenduri Buku held in conjunction with the National Reading Decade 2022, Perak State Level.</p>
+          <div class="chips">
+            <span class="chip">2022</span>
+            <span class="chip">DBP</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="card" data-type="cocurricular">
+        <div class="icon" aria-hidden="true">🏅</div>
+        <div class="card-body">
+          <div class="card-type"><span class="type-label">Co-curricular</span><span style="font-size:12px;color:var(--muted)">• Secondary</span></div>
+          <h3 class="title">National Fitness Program 2021-Participation (KPM)</h3>
+          <p class="meta">SMK Dato Ahmad — 2021</p>
+          <p class="desc">Succesfully participated in the National Fitness Program 2021 organized by the Ministry of Education Malaysia, held online in conjunction with National Sports Day.</p>
+          <div class="chips">
+            <span class="chip">2021</span>
+            <span class="chip">Sport</span>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+       <div id="emptyState" class="empty" style="display:none;">No achievements found for this category.</div>
+
+    <footer style="margin-top:28px; color:var(--text-secondary); font-size:13px;">
+      <p style="margin:0">
+    </footer>
+  </main>
+
+   <script>
+    const pills = document.querySelectorAll('.pill[data-filter]');
+    const cards = Array.from(document.querySelectorAll('.card'));
+    const emptyState = document.getElementById('emptyState');
+
+    function setActivePill(activeBtn){
+      pills.forEach(p=>{
+        p.dataset.active = (p === activeBtn).toString();
+      });
+    }
+
+    function filterItems(btn){
+      setActivePill(btn);
+      const filter = btn.dataset.filter;
+      let visibleCount = 0;
+
+      cards.forEach(card=>{
+        const type = card.dataset.type;
+        if(filter === 'all' || filter === type){
+          card.style.display = '';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      emptyState.style.display = visibleCount ? 'none' : '';
+    }
+
+    // init default
+    document.querySelector('.pill[data-filter="all"]').click();
+
+    // Download/print action (simple)
+    function downloadList(){
+      // prefer print dialog as simple PDF exporter
+      window.print();
+    }
+
+    // optional: keyboard accessibility for pills (Enter/Space)
+    pills.forEach(p=>{
+      p.addEventListener('keydown', (e)=>{
+        if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); p.click(); }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+<p>
+<h5 style="background-color:#B8A18A; font-family:gill sans; color:#2C3539;"> . </h5>
+<p>
+
+
+</body>
+</html>
+
+
+
+<br>
+<center><h2><a href="#top">⇧ TOP ⇧</h2></a>
+<div class="copyright">
+<span>© Copyright IrdinaAhmad 2025 | Best viewed in Chrome | Last updated December 2025</span> 
+</center></div>
+</html>
+
+   

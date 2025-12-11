@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+<body bgcolor="#fffafa">
+</body>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style> 
+body { 
+  margin: 0; 
+  background-color:#fffafa; 
+  font-family: Arial, Helvetica, sans-serif; 
+} 
+ 
+#navbar { 
+  background-color:#D6C7B5 ; 
+  position: fixed; 
+  top: -50px; 
+  width: 100%; 
+  display: block; 
+  transition: top 0.3s; 
+} 
+ 
+#navbar a { 
+  float: left; 
+  display: block; 
+  color:#3B3B3B; 
+  text-align: center; 
+  padding: 15px; 
+  text-decoration: none; 
+  font-size: 17px; 
+} 
+ 
+#navbar a:hover { 
+  background-color: #B8A18A; 
+  color:#ffffff; 
+} 
+</style> 
+</head> 
+<body> 
+ 
+<div id="navbar"> 
+  <a href="index.html">Home</a> 
+  <a href="MyAboutMe.html">About me</a> 
+  <a href="MyEducation.html">My Education</a>
+  <a href="myskill.html">My Skills</a>
+  <a href="MyAchievement.html">My Achievement</a>
+  <a href="mycontact.html">Contact</a> 
+  
+  
+
+</div> 
+  
+<script> 
+// When the user scrolls down 20px from the top of the document, slide down the navbar 
+window.onscroll = function() {scrollFunction()}; 
+ 
+function scrollFunction() { 
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { 
+    document.getElementById("navbar").style.top = "0"; 
+  } else { 
+    document.getElementById("navbar").style.top = "-50px"; 
+  } 
+} 
+</script> 
+ 
+
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<p>
+<br>
+<h1 style="background-color:#B8A18A; font-family:tahoma; text-align:center; color:#836953;"> CONTACT </h1>
+
+
+<br>
+
+
+
+
+<style>
+  
+    :root {
+        --primary-blue: #D2B48C;
+        --text-dark: #333;
+        --bg-light: #f9f9f9;
+        --border-color: #ddd;
+    }
+    .contact-container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 30px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        font-family: 'Arial', sans-serif;
+    }
+
+    
+    .contact-info {
+        flex: 1; 
+        min-width: 250px;
+        padding: 20px;
+        background-color: var(--bg-light);
+        border-radius: 8px;
+    }
+    .contact-info h2 {
+        color: var(--primary-blue);
+        border-bottom: 2px solid var(--primary-blue);
+        padding-bottom: 5px;
+        margin-top: 0;
+    }
+    .contact-info p {
+        margin: 15px 0;
+        font-size: 0.95em;
+    }
+    .contact-info a {
+        color: var(--text-dark);
+        text-decoration: none;
+    }
+    .contact-info a:hover {
+        color: var(--primary-blue);
+    }
+    .social-links a {
+        margin-right: 15px;
+        font-size: 1.5em; 
+    }
+
+
+       .contact-form-area {
+        flex: 2; 
+        min-width: 300px;
+    }
+    .contact-form-area h2 {
+        margin-top: 0;
+        color: var(--text-dark);
+        font-size: 1.8em;
+    }
+    
+  
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: var(--text-dark);
+        font-size: 0.9em;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        box-sizing: border-box; 
+        font-size: 1em;
+        transition: border-color 0.3s;
+    }
+    input:focus, textarea:focus {
+        border-color: var(--primary-blue);
+        outline: none;
+    }
+    textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+    
+
+    .submit-btn {
+        background-color:#D2B48C;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+        transition: background-color 0.3s;
+    }
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
+
+ 
+    @media (max-width: 768px) {
+        .contact-container {
+            flex-direction: column; 
+        }
+        .contact-info {
+            padding: 30px;
+        }
+    }
+</style>
+
+<div class="contact-container">
+    
+    <div class="contact-info">
+        <h2>Direct Contact</h2>
+        
+        <p>
+            <strong>Email:</strong> <a href="mailto:irdinaaahmad@gmail.com">irdinaaahmad@gmail.com</a>
+        </p>
+        
+        <p>
+            <strong>Phone Number:</strong> 011 241 82380
+        <p>
+            <strong>Location:</strong> Perak, Malaysia
+
+        </p>
+        
+        <h2>Connect With Me</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/dina-ahmad-6947223a0/" title="LinkedIn">🔗</a> 
+            <a href="https://github.com/itsdna" title="GitHub">💻</a> 
+          
+        </div>
+        
+        <p style="margin-top: 30px; font-style: italic;">I generally respond to all inquiries within 24 hours.</p>
+
+    </div>
+    
+    <div class="contact-form-area">
+        <h2>Send Me a Message</h2>
+        <form action="#" method="POST"> 
+            
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject (e.g., Internship Inquiry)</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+    
+</div>
+
+
+
+
+<div style="padding:6px;"> 
+<h1 style="font-family:monospace; text-align:center; color: #3B3B3B;">THANK YOU</h1>
+<br>
+<h5 style="background-color:#B8A18A; font-family:gill sans; color:#2C3539;"> . </h5>
+<p>
+</body> 
+</html>
+<br>
+<br>
+<center>
+<div class="copyright">
+<span>© Copyright IrdinaAhmad 2025 | Best viewed in Chrome | Last updated December 2025</span> 
+</center></div>
+</html>
+
+
+
+
+
+ 
+        
